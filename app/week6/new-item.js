@@ -1,33 +1,28 @@
 "use client";
-
 import { useState } from "react";
 
-export default function NewItem() {
+export default function NewItem({ onAddItem }) {
     const [name, setName] = useState("");
     const [quantity, setQuantity] = useState(0);
     const [category, setCategory] = useState("category");
     
-    
     const handleSubmit = (event) => {
-    event.preventDefault();
+        event.preventDefault();
 
-    
-    const item = {
-        name,
-        quantity,
-        category,
-    };
-    
-    
-    console.log(item);
+        const item = {
+            name,
+            quantity,
+            category,
+        };
+        
+        console.log(item);
 
-    
-    alert("Added item: " + name + ", Quantity: " + quantity + ", Category: " + category)
+        // Call the onAddItem function with the new item
+        onAddItem(item);
 
-    
-    setName("");
-    setQuantity(0);
-    setCategory("category");
+        setName("");
+        setQuantity(0);
+        setCategory("category");
     };
 
     const handleNameChange = (event) => {
@@ -42,14 +37,12 @@ export default function NewItem() {
         setCategory(event.target.value);
     };  
 
-
-
     return (
         <div>
-            <div className="min-h-screen bg-pink-gray-100 mt-10 flex items-top justify-center">               
+            <div className="min-h-screen bg-blue-gray-100 mt-10 flex items-top justify-center">               
                 <div>
                 
-                    <form class="m-10 max-w-sm w-full"onSubmit={handleSubmit}>
+                    <form class="m-10 max-w-sm w-full" onSubmit={handleSubmit}>
                         
                         <div className="block mb-3 w-full rounded-md text-black bg-gray-100 focus:bg-white">                            
                             <input

@@ -11,24 +11,29 @@ return (
         <StudentInfo /> {/* Render the StudentInfo component */}
         <p>
         <Link href="/week2">
-            Week 2 Assignments
+            Week 2 Assignment
         </Link>
         <br></br>
         <Link href="/week3">
-            Week 3 Assignments
+            Week 3 Assignment
         </Link>
         <br></br>
         <Link href="/week4">
-            Week 4 Assignments
+            Week 4 Assignment
         </Link>
         <br></br>
         <Link href="/week5">
-            Week 5 Assignments
+            Week 5 Assignment
         </Link>
         <br></br>
-        <Link href="/week5">
-            Week 6 Assignments
+        <Link href="/week6">
+            Week 6 Assignment
         </Link>
+        <br></br>
+        <Link href="/week7">
+            Week 7 Assignment
+        </Link>
+        <br></br>
         
         </p>
     </div>
