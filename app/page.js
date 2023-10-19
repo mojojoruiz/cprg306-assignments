@@ -21,6 +21,14 @@ return (
         <Link href="/week4">
             Week 4 Assignments
         </Link>
+        <br></br>
+        <Link href="/week5">
+            Week 5 Assignments
+        </Link>
+        <br></br>
+        <Link href="/week5">
+            Week 6 Assignments
+        </Link>
         
         </p>
     </div>
