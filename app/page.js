@@ -34,6 +34,10 @@ return (
             Week 7 Assignment
         </Link>
         <br></br>
+        <Link href="/week8">
+            Week 8 Assignment
+        </Link>
+        <br></br>
         
         </p>
     </div>
