@@ -38,6 +38,13 @@ return (
             Week 8 Assignment
         </Link>
         <br></br>
+        </Link>
+        <br></br>
+        <Link href="/week10">
+            Week 8 Assignment
+        </Link>
+        <br></br>
+
         
         </p>
     </div>
